@@ -22,8 +22,23 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    //    compile 'org.xwalk:xwalk_core_library:22.52.561.4'
-    compile 'com.android.support:appcompat-v7:25.1.1'
-//    compile 'org.xwalk:xwalk_core_library:21.51.546.7'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+
+
+    // nohttp 相关库
+    // {
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    // 如果要使用okhttp作为nohttp底层，请再依赖下面的库，记得与nohttp保持版本的一致
+    // compile 'com.yanzhenjie.nohttp:okhttp:1.1.0'
+    // }
+
+
+
+
     testCompile 'junit:junit:4.12'
+    compile project(path: ':nohttp')
+
 }
