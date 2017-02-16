@@ -3,11 +3,13 @@ package demo.article.dyf.mc.articlle;
 import java.util.LinkedList;
 import java.util.List;
 
+import demo.article.dyf.mc.articlle.entity.Article;
+
 /**
  * Created by dyf on 2017/2/13.
  */
 
-public class ArticleModeImple implements ArticleModel {
+public class ArticleModelImpl implements ArticleModel {
     List<Article> mCacheArticles = new LinkedList<>();
 
     @Override
